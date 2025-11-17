@@ -1,0 +1,34 @@
+/* -------------------- GLOBAL -------------------- */
+* {
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Majorelle-Blue: #4F48E5;
+    --Very-Light-Blue: #6466EF;
+    --Yankees-Blue: #202938;
+    --Lilac: #E1E7FF;
+    --Alice-Blue: #ECF0FE;
+    --Cayola-Green: #14B881;
+    --Eucalyptus: #34D399;
+    --Aero-Blue: #D0FAE4;
+    --Cosmic-Latte: #F9FEE8;
+    --White: #FFFFFF;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flexbox div {
+    display: flex;
+    align-items: center;
+    background-color: var(--Cayola-Green);
+    padding: 24px;
+}

@@ -1,0 +1,381 @@
+/* -------------------- GLOBAL -------------------- */
+* {
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Majorelle-Blue: #4F48E5;
+    --Very-Light-Blue: #6466EF;
+    --Yankees-Blue: #202938;
+    --Lilac: #E1E7FF;
+    --Alice-Blue: #ECF0FE;
+    --Cayola-Green: #14B881;
+    --Eucalyptus: #34D399;
+    --Aero-Blue: #D0FAE4;
+    --Cosmic-Latte: #F9FEE8;
+    --White: #FFFFFF;
+}
+
+.flexbox-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+/* -------------------- LAYOUT PRINCIPAL -------------------- */
+header {
+    background-color: var(--White);
+    height: auto;
+    padding: 16px 80px;
+    display: flex;
+    border-bottom: 4px solid var(--Alice-Blue);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav {
+    width: fit-content;
+    margin-left: auto;
+    display: flex;
+    gap: 24px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+main {
+    background-color: var(--White);
+}
+
+
+/* -------------------- ENCABEZADOS -------------------- */
+h1 {
+    color: var(--Yankees-Blue);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+h2 {
+    color: var(--Yankees-Blue);
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+h3 {
+    color: var(--Yankees-Blue);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+h4 {
+    color: var(--Yankees-Blue);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+h6 {
+    color: var(--Yankees-Blue);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+/* -------------------- TEXTOS -------------------- */
+.body-large {
+    color: var(--Yankees-Blue);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.body-medium {
+    color: #697077;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.body-small {
+    color: #697077;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.group-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    color: #37383F;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    line-height: 100%;
+    gap: 16px;
+    padding: 12px 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* -------------------- BOTONES -------------------- */
+.primary-button {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    height: 56px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    border: 2px solid var(--Majorelle-Blue, #4F48E5);
+    background: var(--Majorelle-Blue, #4F48E5);
+}
+
+.secondary-button {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 16px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 14px;
+    border: 2px solid var(--Crayola-Green, #14B881);
+    background: var(--White, #FFF);
+    color: var(--Crayola-Green, #14B881);
+}
+
+.nav-button {
+    display: flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: #4F48E5 2px solid;
+    background: #4F48E5;
+    color: var(--White);
+
+}
+
+.small-button {
+    display: flex;
+    padding: 14px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+}
+
+.buttons-group {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.button-text-medium {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    /*text-transform: uppercase;*/
+}
+
+/* FOOTER - Base (pantallas chicas) */
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    color: var(--Very-Light-Blue);
+}
+
+footer .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+    align-content: center;
+}
+
+footer .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-left: 0px;
+    align-content: center;
+}
+
+footer .menu a {
+    color: var(--Very-Light-Blue);
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-media a {
+    background-color: var(--Very-Light-Blue);
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.footer-social-media a img {
+    height: 12px;
+}
+
+
+
+/* -------------------- PROMOS -------------------- */
+
+.promos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 48px;
+    column-gap: 16px;
+}
+
+.promo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    color: var(--Yankees-Blue);
+}
+
+.promo-card span {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 4px 18px;
+}
+
+.promo-card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.promo-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.promo-card button {
+    width: 100%;
+    background: none;
+    border: 1px solid var(--Very-Light-Blue);
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 18px;
+}
+
+@media (width >=768px) {
+    .promos-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (width >=1200px) {
+    .promos-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .promo-card button {
+        font-size: 20px;
+    }
+
+        footer {
+            display: flex;
+            padding: 48px 160px;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--Very-Light-Blue);
+            flex-direction: row;
+            /* Asegura que vuelva a horizontal */
+            text-align: left;
+        }
+    
+        footer .nav {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+            align-items: center;
+        }
+    
+        footer .menu {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+    
+        footer .menu a {
+            color: var(--Very-Light-Blue);
+        }
+    
+        .footer-social-media {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-shrink: 0;
+        }
+    
+        .footer-social-media a {
+            background-color: var(--Very-Light-Blue);
+            height: 24px;
+            aspect-ratio: 1 / 1;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+        }
+    
+        .footer-social-media a img {
+            height: 12px;
+        }
+}

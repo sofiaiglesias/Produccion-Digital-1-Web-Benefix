@@ -1,0 +1,68 @@
+
+
+.seccion-prueba{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 1fr);
+
+    height: 100vh;
+    width: 100%;
+
+    grid-template-areas: 
+        "card1 card1 card1 card2"
+        "card3 card4 card4 card2"
+        "card3 card5 card5 card6"
+    ;
+}
+
+/* 
+
+Tamaños estandares:
+1920 -> 1440 -> 860
+
+*/
+
+
+
+
+.seccion-prueba .card1{
+    grid-area: card1;
+    background-color: red;
+}
+
+.seccion-prueba .card2{
+    grid-area: card2;
+    background-color: orange;
+}
+.seccion-prueba .card3{
+    grid-area: card3;
+    background-color: yellow;
+}
+.seccion-prueba .card4{
+    grid-area: card4;
+    background-color: green;
+}
+.seccion-prueba .card5{
+    grid-area: card5;
+    background-color: blue;
+}
+.seccion-prueba .card6{
+    grid-area: card6;
+    background-color: violet;
+}
+
+@media (max-width: 1200px) {
+    .seccion-prueba {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+
+        grid-template-areas:
+            "card1 card2"
+            "card3 card3"
+            "card3 card3"
+            "card4 card4"
+            "card5 card5"
+            "card6 card6"
+        ;
+    }
+}

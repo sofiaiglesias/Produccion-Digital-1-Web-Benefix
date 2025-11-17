@@ -1,0 +1,247 @@
+/* -------------------- SECTIONS -------------------- */
+
+/* HERO */
+.hero {
+    background-color: var(--Alice-Blue);
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    align-self: stretch;
+}
+
+.hero-text-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: center;
+    gap: 48px;
+    padding-bottom: 36px;
+}
+
+.hero .buttons-group {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+}
+
+
+
+/* FEATURES */
+
+.features {
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+}
+
+.features-container-card {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.feature-card {
+    align-items: center;
+    border-radius: 24px;
+    padding: 24px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 300px;
+    border: 2px solid var(--Very-Light-Blue, #6466EF);
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.features .card-text p {
+    color: var(--Majorelle-Blue);
+}
+
+
+
+/* HOW-IT-WORKS */
+
+.how-it-works {
+    background-color: var(--Lilac);
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+}
+
+.steps-container-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+    position: relative;
+}
+
+.steps {
+    width: 395px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    text-align: center;
+}
+
+.step-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    align-self: stretch;
+}
+
+.step-icon {
+    display: flex;
+    padding: 28px 42px;
+    align-items: center;
+    border-radius: 24px;
+    background-color: var(--Majorelle-Blue);
+}
+
+.step-icon h1 {
+    color: var(--White);
+}
+
+/* OPINIONES */
+.opiniones {
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.opinions-carrusel-container {
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    position: relative;
+}
+
+.opinions-container-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 0 48px;
+}
+
+.opinion-card {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 24px;
+    border: 2px solid var(--Crayola-Green, #14B881);
+    text-align: center;
+    width: 700px;
+}
+
+.opinion-card:last-of-type {
+    display: none;
+}
+
+.opinion-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    gap: 16px;
+    text-align: center;
+    display: flex;
+    padding-top: 16px;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+/* CALL TO ACTION */
+.call-to-action {
+    background-color: var(--Eucalyptus);
+    display: flex;
+    padding: 80px 160px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--White);
+}
+
+.h3-cta {
+    color: #ffffff;
+    flex-basis: 0;
+    flex-grow: 0.55;
+}
+
+.cta-primary-button {
+    border-radius: 8px;
+    background: var(--White, #FFF);
+    color: var(--Eucalyptus);
+    text-decoration: none;
+    display: flex;
+    padding: 14px 18px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-weight: 550;
+}
+
+
+
+
+
+
+@media (width >=1280px) {
+    .opinion-card:last-of-type {
+        display: flex;
+    }
+}

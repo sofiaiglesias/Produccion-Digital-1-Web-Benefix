@@ -1,0 +1,234 @@
+/* -------------------- SECTIONS -------------------- */
+
+/* HERO */
+.hero {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 68px;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 74px;
+    width: 100%;
+}
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+    align-self: stretch;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.hero-text .group-text {
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+.hero-text-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: center;
+    gap: 48px;
+}
+
+/* SECCION GRILLA */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    padding: 80px;
+}
+
+.dias-container {
+    background-color: var(--Lilac);
+}
+
+.dias-container h2 {
+    text-align: center;
+}
+
+.dias-container>div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 500px;
+}
+
+.dia-semana {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: var(--White);
+    border-radius: 9px;
+    padding: 16px 24px;
+}
+
+.dia-semana p {
+    font-weight: 600;
+}
+
+.dia-promocion>div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    color: var(--Yankees-Blue);
+}
+
+.dia-promocion-header{
+    width: 100%;
+}
+
+.dia-header div {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.dia-header button {
+    display: none;
+    background: var(--Alice-Blue);
+    border: none;
+    border-radius: 10px;
+    color: var(--Majorelle-Blue);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 16px 22px;
+}
+
+.dia-header button img {
+    width: 14px;
+    height: 14px;
+    transform: rotate(-90deg);
+}
+
+.dia-promocion>div:first-of-type p {
+    font-size: 18px;
+}
+
+.dia-promocion .promo-card span {
+    background-color: var(--Lilac);
+}
+
+.divider {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.line-solid {
+    border-top: 2px solid var(--Very-Light-Blue);
+    width: 100%;
+}
+
+/* CALL TO ACTION */
+.call-to-action {
+    background-color: var(--Majorelle-Blue);
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--White);
+    gap: 32px;
+}
+
+.h3-cta {
+    color: #ffffff;
+    flex-basis: 0;
+    flex-grow: 0.55;
+}
+
+.cta-primary-button {
+    border-radius: 9px;
+    background: var(--White, #FFF);
+    color: var(--Majorelle-Blue);
+    border: 2px solid var(--White);
+    text-decoration: none;
+    display: flex;
+    padding: 14px 18px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-weight: 550;
+}
+
+.cta-secondary-button {
+    border-radius: 9px;
+    background: var(--Majorelle-Blue);
+    color: var(--White);
+    border: 2px solid var(--White);
+    text-decoration: none;
+    display: flex;
+    padding: 14px 18px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-weight: 550;
+}
+
+
+@media (width >=1280px) {
+    section {
+        padding: 80px;
+    }
+
+    .bancos-container>div {
+        max-width: 1032px;
+    }
+
+    .banco img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .banco-promocion>div:first-of-type {
+        gap: 44px;
+    }
+
+    .banco-header img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .banco-promocion>div:first-of-type p {
+        font-size: 22px;
+    }
+
+    .banco-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .banco-header button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}

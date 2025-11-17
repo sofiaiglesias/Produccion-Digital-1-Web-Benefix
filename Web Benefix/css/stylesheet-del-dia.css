@@ -1,0 +1,204 @@
+/* -------------------- SECTIONS -------------------- */
+
+/* HERO */
+.hero {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    text-align: center;
+    padding: 56px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    width: 100%;
+}
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+    align-self: stretch;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.hero-text .group-text {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.hero-text-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: center;
+    gap: 48px;
+}
+
+/* SECCION GRILLA */
+
+.seccion-promos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    align-self: stretch;
+    background-color: var(--Lilac, #E1E7FF);
+    padding: 80px;
+}
+
+.seccion-promos>div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.seccion-promos>div p {
+    font-size: 18px;
+}
+
+.seccion-promos .promo-card span {
+    background-color: var(--Cosmic-Latte);
+}
+
+.features-container-card {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.feature-card {
+    align-items: center;
+    border-radius: 24px;
+    padding: 24px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 15%;
+    border: 2px solid var(--Very-Light-Blue, #6466EF);
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.features .card-text p {
+    color: var(--Majorelle-Blue);
+}
+
+/* CALL TO ACTION */
+.call-to-action {
+    background-color: var(--Majorelle-Blue);
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--White);
+    gap: 32px;
+}
+
+.h3-cta {
+    color: #ffffff;
+    flex-basis: 0;
+    flex-grow: 0.55;
+}
+
+.cta-primary-button {
+    border-radius: 9px;
+    background: var(--White, #FFF);
+    color: var(--Majorelle-Blue);
+    border: 2px solid var(--White);
+    text-decoration: none;
+    display: flex;
+    padding: 14px 18px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-weight: 550;
+}
+
+.cta-secondary-button {
+    border-radius: 9px;
+    background: var(--Majorelle-Blue);
+    color: var(--White);
+    border: 2px solid var(--White);
+    text-decoration: none;
+    display: flex;
+    padding: 14px 18px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-weight: 550;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    padding: 48px 160px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Very-Light-Blue);
+}
+
+footer .menu a {
+    color: var(--Majorelle-Blue);
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer-social-media a {
+    background-color: var(--Very-Light-Blue);
+    height: 24px;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+
+}
+
+.footer-social-media a img {
+    height: 12px;
+}
+
+@media (width >=1280px) {
+    .seccion-promos {
+        padding: 80px;
+    }
+}

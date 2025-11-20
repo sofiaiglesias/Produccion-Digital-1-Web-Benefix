@@ -315,6 +315,7 @@ footer .menu a {
     font-size: 16px;
     font-weight: 500;
     padding: 15px 18px;
+    margin-top: auto;
 }
 
 @media (width >=768px) {

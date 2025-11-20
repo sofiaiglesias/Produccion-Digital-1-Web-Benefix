@@ -285,7 +285,7 @@ footer .menu a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 18px;
+    gap: 16px;
     color: var(--Yankees-Blue);
 }
 

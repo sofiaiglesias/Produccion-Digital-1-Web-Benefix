@@ -1,5 +1,13 @@
 /* -------------------- SECTIONS -------------------- */
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    padding: 80px 36px;
+}
+
 /* HERO */
 .hero {
     background-color: var(--White);
@@ -8,6 +16,10 @@
     align-items: center;
     gap: 68px;
     text-align: center;
+}
+
+h1{
+    color: var(--Majorelle-Blue);
 }
 
 .hero-content {
@@ -25,6 +37,10 @@
     gap: 36px;
     align-self: stretch;
     width: 100%;
+}
+
+.banner-desktop {
+    display: none;
 }
 
 .hero-image img {
@@ -58,14 +74,6 @@
 
 /* SECCION GRILLA */
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 56px;
-    padding: 80px;
-}
-
 .dias-container {
     background-color: var(--Lilac);
 }
@@ -79,7 +87,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
-    max-width: 500px;
+    width: 100%;
 }
 
 .dia-semana {
@@ -192,40 +200,46 @@ section {
     font-weight: 550;
 }
 
+@media (width >= 800px) {
+    .dias-container>div {
+            max-width: 600px;
+        }
+}
+
 
 @media (width >=1280px) {
     section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 56px;
         padding: 80px;
     }
 
-    .bancos-container>div {
-        max-width: 1032px;
+    .banner-desktop {
+        display: flex;
+    }
+    
+    .banner-mobile {
+        display: none;
     }
 
-    .banco img {
-        width: 22px;
-        height: 22px;
-    }
+    
 
-    .banco-promocion>div:first-of-type {
+    .dia-promocion>div:first-of-type {
         gap: 44px;
     }
 
-    .banco-header img {
-        width: 55px;
-        height: 55px;
-    }
-
-    .banco-promocion>div:first-of-type p {
+    .dia-promocion>div:first-of-type p {
         font-size: 22px;
     }
 
-    .banco-header {
+    .dia-header {
         display: flex;
         justify-content: space-between;
     }
 
-    .banco-header button {
+    .dia-header button {
         display: flex;
         align-items: center;
         gap: 10px;

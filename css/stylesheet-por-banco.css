@@ -1,5 +1,20 @@
 /* -------------------- SECTIONS -------------------- */
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    padding: 80px 36px;
+}
+
+h1 {
+    color: var(--Majorelle-Blue);
+}
+
+h2{
+    text-align: center
+;}
 /* HERO */
 .hero {
     background-color: var(--White);
@@ -9,6 +24,8 @@
     gap: 68px;
     text-align: center;
 }
+
+
 
 .hero-content {
     display: flex;
@@ -25,6 +42,10 @@
     gap: 36px;
     align-self: stretch;
     width: 100%;
+}
+
+.banner-desktop {
+    display: none;
 }
 
 .hero-image img {
@@ -57,14 +78,6 @@
 }
 
 /* SECCION GRILLA */
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 56px;
-    padding: 80px;
-}
 
 .bancos-container {
     background-color: var(--Lilac);
@@ -195,7 +208,19 @@ section {
 
 @media (width >=1280px) {
     section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 56px;
         padding: 80px;
+    }
+
+    .banner-desktop {
+        display: flex;
+    }
+    
+    .banner-mobile {
+        display: none;
     }
 
     .bancos-container>div {

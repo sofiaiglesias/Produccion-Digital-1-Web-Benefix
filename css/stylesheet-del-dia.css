@@ -1,14 +1,26 @@
 /* -------------------- SECTIONS -------------------- */
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    padding: 80px 36px;
+}
+
+
 /* HERO */
 .hero {
     background-color: var(--White);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 56px;
     text-align: center;
-    padding: 56px;
+    padding: 56px 36px;
+}
+
+h1 {
+    color: var(--Majorelle-Blue);
 }
 
 .hero-content {
@@ -34,11 +46,20 @@
     object-fit: cover;
 }
 
+.banner-desktop {
+    display: none;
+}
+
+.hero-image h3{
+    display: none;
+}
+
 .hero-text {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
     align-self: stretch;
 }
 
@@ -62,10 +83,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 56px;
     align-self: stretch;
     background-color: var(--Lilac, #E1E7FF);
-    padding: 80px;
 }
 
 .seccion-promos>div:first-of-type {
@@ -120,7 +139,6 @@
     background-color: var(--Majorelle-Blue);
     display: flex;
     flex-direction: column;
-    padding: 48px;
     justify-content: space-between;
     align-items: center;
     color: var(--White);
@@ -131,6 +149,7 @@
     color: #ffffff;
     flex-basis: 0;
     flex-grow: 0.55;
+    text-align: center;
 }
 
 .cta-primary-button {
@@ -161,44 +180,33 @@
     font-weight: 550;
 }
 
-/* FOOTER */
-footer {
-    display: flex;
-    padding: 48px 160px;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--Very-Light-Blue);
-}
-
-footer .menu a {
-    color: var(--Majorelle-Blue);
-}
-
-.footer-social-media {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.footer-social-media a {
-    background-color: var(--Very-Light-Blue);
-    height: 24px;
-    aspect-ratio: 1 / 1;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-
-}
-
-.footer-social-media a img {
-    height: 12px;
-}
-
-@media (width >=1280px) {
-    .seccion-promos {
+@media (width >=1080px) {
+    section {
         padding: 80px;
+    }
+
+    .hero{
+        padding: 80px;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+    }
+
+    .banner-desktop {
+        display: flex;
+    }
+
+    .banner-mobile {
+        display: none;
+    }
+    
+    .hero-image h3 {
+         display: flex;
     }
 }

@@ -212,10 +212,9 @@ li a {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.5px;
-    /*text-transform: uppercase;*/
 }
 
-/* FOOTER - Base (pantallas chicas) */
+/* FOOTER */
 footer {
     display: flex;
     flex-direction: column;
@@ -355,7 +354,6 @@ footer .menu a {
             align-items: center;
             color: var(--Very-Light-Blue);
             flex-direction: row;
-            /* Asegura que vuelva a horizontal */
             text-align: left;
         }
     
